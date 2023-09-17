@@ -18,8 +18,9 @@
             text-align: center;
         }
         header img {
-            max-width: 100%;
+            width: 100px; /* Adjust the width as needed */
             height: auto;
+            border-radius: 5px; /* Optional: Add rounded corners */
         }
         nav {
             background-color: #444;
@@ -34,43 +35,49 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .content {
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="headshot.jpg" alt="Kyle MacPherson's Headshot">
-        <h1>Kyle MacPherson</h1>
-        <p>Future Mechanical Engineer</p>
-    </header>
+    <div class="content">
+        <header>
+            <h1>Kyle MacPherson</h1>
+            <p>Future Mechanical Engineer</p>
+        </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="content" id="home">
-        <h2>Home</h2>
-        <p>Welcome to my personal profile as a Mechanical Engineering Student at Dalhousie University. This is the home page of my website.</p>
-        <!-- Add your home page content here, such as a brief introduction or summary. -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-
+    <div style="width: 100%;">
+        <div style="width: 50%; height: 300px; float: left; margin-left: 10%; margin-bottom: auto;"> 
+            <img src="headshot.jpg" alt="Kyle MacPherson's Headshot" style="max-height: 300px;border-radius: 5%; width: auto;">
+            
+            <p>You can get in touch with me:</p>
+            <ul>
+                <li>Email: <a href="mailto:macphersonkyle@outlook.com">macphersonkyle@outlook.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kyle-macpherson" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+        <div style="margin-left: 50%; height: 100px; margin-right: 10%; margin-bottom: auto;"> 
+            <p>Welcome to my personal profile. This is the home page of my website.</p>
+        </div>
+    </div>
     <div class="content" id="projects">
         <h2>Projects</h2>
         <p>Here are some of the engineering projects I've worked on:</p>
         <!-- Add details about your engineering projects, including descriptions, technologies used, and any notable achievements. -->
     </div>
 
-    <div class="content" id="contact">
-        <h2>Contact</h2>
-        <p>You can get in touch with me through the following contact information:</p>
-        <ul>
-            <li>Email: macphersonkyle@outlook.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/kyle-macpherson                " target="_blank">LinkedIn Profile</a></li>
-        </ul>
-    </div>
+
 </body>
 </html>
